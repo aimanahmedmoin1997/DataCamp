@@ -24,19 +24,12 @@ the petal lengths.
 -Label the axes.
 -Show your plot.
 '''
-import numpy as np
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-df = pd.read_csv('../_datasets/iris.csv')
-
 # Create bee swarm plot with Seaborn's default settings
-sns.swarmplot(x='species', y='petal length (cm)', data=df)
+_ = sns.swarmplot(x='species', y='petal length (cm)', data=df)
 
 # Label the axes
-plt.xlabel('species')
-plt.ylabel('petal length (cm)')
+_ = plt.xlabel('species')
+_ = plt.ylabel('petal length (cm)')
 
 # Show the plot
 plt.show()
