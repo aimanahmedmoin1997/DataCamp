@@ -26,19 +26,12 @@ and y-axis is 'petal length (cm)'.
 -Don't forget to label your axes!
 -Display the figure using the normal call.
 '''
-import numpy as np
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-df = pd.read_csv('../_datasets/iris.csv')
-
 # Create box plot with Seaborn's default settings
 _ = sns.boxplot(x='species', y='petal length (cm)', data=df)
 
 # Label the axes
-plt.xlabel('species')
-plt.ylabel('petal length (cm)')
+_ = plt.xlabel('species')
+_ = plt.ylabel('petal length (cm)')
 
 # Show the plot
 plt.show()
